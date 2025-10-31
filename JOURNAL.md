@@ -26,3 +26,21 @@ In terms of PA, maybe it's worth reverse engineering the DRA818 module? Need to 
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjE5MiwicHVyIjoiYmxvYl9pZCJ9fQ==--2bae69dccf7e11731471c0a18501d8311ca2072a/image.png)
   
 
+## 10/31/2025 - Making the schematic  
+
+After a bit of a marathon of routing the schematic, I have the first version:
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njk1OCwicHVyIjoiYmxvYl9pZCJ9fQ==--9bfb96c760e40012e0d32e08a38d8c0a4e046256/image.png)
+
+There is no doubt that there are tons of mistakes in it, a few that I am yet to find. That being said, here are my top priorities to fix:
+
+- Filtering the power supply. First of all, do we use a 400KHz or 2100KHz switching frequency? Something in between? Are higher or lower frequencies better for RF work? My primary concern is that some harmonics/ripple will get into the DRA818's power supply and ruin the sensitivity. Even worse, they could get past the AMS1117, since it doesn't filter out very high frequencies, and get into the LNA power supply, possibly amplifying them into the RF input.
+- Add more test points. While I initially didn't like blotting test points all around my board like it was a bad case of teenage acne, I've come to realize their usefulness. We need more test points! 
+- How to we add more user interface? For example, how does the user set the transmit/receive frequencies? It's very possible to just hardcode them in firmware (which I am tempted to do, since I'm the person writing the firmware anyways, and every gram is precious on a high altitude balloon), but could there be a better way?
+
+That's all for now. Let me know if you have any comments/solutions/ideas!
+[Schematic in PDF](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Njk1OSwicHVyIjoiYmxvYl9pZCJ9fQ==--95e7fc2f096d57fceb5828352f4c173b1fa19316/repeater.pdf)
+
+
+  
+

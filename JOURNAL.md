@@ -44,3 +44,10 @@ That's all for now. Let me know if you have any comments/solutions/ideas!
 
   
 
+## 11/9/2025 - Schematic is done!  
+
+Talked to a ton of people about the RF parts and also fixed tons of specific things about the schematic. We also now have switches and better filtering of the power supply, among other things. 
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTkyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--c4a3509015fedf59c1fe4d3eff7a0665d2f7c982/image.png)
+  
+
